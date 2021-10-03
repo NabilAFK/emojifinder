@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emoji Finder - By Nabil</title>
+<meta name="theme-color" content="#36393F">
+      <meta property="og:image:url" content="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+      <meta property="og:image:secure_url" content="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+      <meta name="description" content="Use an emoji finder online for free, unblocked!">
+      <link rel="icon" type="image/jpeg" sizes="180x180" href="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    select {
+      font-size: 24px;
+    }
+
+    span {
+      font-size: 96px;
+    }
+
+    h2 {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    p {
+      font-family: 'Nunito', sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+<h2>Emoji Finder</h2>
+
+<p>Find me emojis that are..</p>
+<select onchange="search(this.value)">
+  <option></option>
+  <option>happy</option>
+  <option>sad</option>
+  <option>excited</option>
+  <option>confused</option>
+  <option>surprised</option>
+</select>
+
+<hr>
+
+<span class="happy">😀</span>
+<span class="happy excited">😃</span>
+<span class="happy excited">😄</span>
+<span class="happy excited">😆</span>
+<span class="happy excited">😂</span>
+<span class="happy">😊</span>
+<span class="happy">😇</span>
+<span class="happy">😌</span>
+<span class="happy excited">😍</span>
+<span class="happy">😗</span>
+<span class="happy">😙</span>
+<span class="happy">😚</span>
+<span class="happy excited">😋</span>
+<span class="confused excited">😜</span>
+<span class="confused excited">😝</span>
+<span class="confused excited">😛</span>
+<span class="sad">😒</span>
+<span class="sad">😞</span>
+<span class="sad">😔</span>
+<span class="sad">😟</span>
+<span class="sad">😕</span>
+<span class="confused">😖</span>
+<span class="sad">😫</span>
+<span class="sad">😩</span>
+<span class="sad">😤</span>
+<span class="sad">😠</span>
+<span class="sad">😡</span>
+<span class="confused">😶</span>
+<span class="confused">😐</span>
+<span class="confused">😑</span>
+<span class="surprised">😯</span>
+<span class="surprised">😦</span>
+<span class="surprised">😧</span>
+<span class="surprised">😮</span>
+<span class="surprised confused">😲</span>
+<span class="surprised confused">😵</span>
+<span class="surpised confused">😳</span>
+<span class="surpised confused">😱</span>
+<span class="sad surprised confused">😨</span>
+<span class="sad confused">😰</span>
+<span class="sad confused">😢</span>
+<span class="sad confused">😥</span>
+
+<hr>
+
+<p>Made by Nabil</p>
+
+<script>
+  spans = document.querySelectorAll("span")
+  function search(tag){
+    for(span of spans){
+      isMatch = span.className.match(tag)
+      span.setAttribute("style", isMatch || "display:none")
+    }
+  }
+</script>
+
+</body>
+</html>
